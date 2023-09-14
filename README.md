@@ -51,27 +51,29 @@
 
 ### 从者替换
 
-可以完全自定义修改队伍中前三个从者。需要自己配置好`Servants.json`并放置在新建目录`/sdcard/Android/data/com.placeholder/files/Mod`，可以参考我的例子。数据可以在[这个网站](https://apps.atlasacademy.io/db/CN/servants)找到。
+可以完全自定义修改队伍中前三个从者。需要自己配置好`Servants.yaml`并放置在新建目录`/sdcard/Android/data/com.placeholder/files/Mod`，可以参考我的例子。数据可以在[这个网站](https://apps.atlasacademy.io/db/CN/servants)找到。
 
 ### 配置
 
-下载`ModConfig.json`放置在`/sdcard/Android/data/com.placeholder/files/Mod`即可，部分功能可以在菜单中配置。
+下载`ModConfig.yaml`放置在`/sdcard/Android/data/com.placeholder/files/Mod`即可。
 
-```json
-{
-  "EnableReplaceSvt": true,
-  "EnableAutoSelectCard": true,
-  "CardColor": 2,
-  "SvtId": [2500700, 500800, 500800]
-}
+```yaml
+EnableReplaceSvt: true
+EnableAutoSelectCard: true
+CardColor: 2
+SvtId:
+- 2500700
+- 500800
+- 500800
+
 ```
 
 完整的文件树：
 
 ```
 /sdcard/Android/data/com.placeholder/files/Mod/:
-|---ModConfig.json
-|---Servants.json
+|---ModConfig.yaml
+|---Servants.yaml
 ```
 
 ### 其他
